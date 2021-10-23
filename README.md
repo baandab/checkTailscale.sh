@@ -43,6 +43,6 @@ Crontab Example:
 This example checks every 15 minutes to see if TailScale is running 
 
 <code>##MIN          HOUR   MDAY     MON     DOW      COMMAND<p>
-,15,30,45     *      *       *       *       /Users/me/bin/checkTailscale.sh -i       	&> /dev/null</code>
+0,15,30,45     *      *       *       *       /Users/me/bin/checkTailscale.sh -i       	&> /dev/null</code>
 
 

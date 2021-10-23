@@ -11,8 +11,23 @@ Dependencies:
 
 See Tailscale at https://tailscale.com/
 
+Usage
+--------------
+./checkTailscale.sh  [ -p [ADDRESS] -o [ADDRESS] -n [NAME] [-e] [-i] ]
+
+OPTIONS:
+</br>   -o   set the IP address of a second system that is running tailscale to verify that tailscale is working
+</br>   -n   set the user-friendly name of that second system that is running tailscale to verify that tailscale is working
+</br>   -p   set IP address to ping
+</br>   -e   send an email every time this script runs
+</br>   -i   send an email only if there was a problem with the Internet or tailscale
+
+
+
 Customization:
 --------------
+Edit the script and change these variables:
+</br>
 | Variable|Description|
 |---|---|
 | VERFILE                      | Location of where the version of Tailscale is stored, should not be a temporary location 						   |
@@ -25,7 +40,7 @@ Customization:
 
 Crontab Example:
 ----------------
-This example checks every 15 minutes to see if Tailscale is running 
+This example checks every 15 minutes to see if TailScale is running 
 
 <code>##MIN          HOUR   MDAY     MON     DOW      COMMAND<p>
 ,15,30,45     *      *       *       *       /Users/me/bin/checkTailscale.sh -i       	&> /dev/null</code>

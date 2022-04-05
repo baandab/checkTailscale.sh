@@ -13,14 +13,15 @@ See Tailscale at https://tailscale.com/
 
 Usage
 --------------
-./checkTailscale.sh  [ -p [ADDRESS] -o [ADDRESS] -n [NAME] [-e] [-i] ]
+./checkTailscale.sh  [ -p [ADDRESS] -o [ADDRESS] -n [NAME] [-e] [-i] -s [COUNT] ]
 
 OPTIONS:
 </br>   -o   set the IP address of a second system that is running tailscale to verify that tailscale is working
 </br>   -n   set the user-friendly name of that second system that is running tailscale to verify that tailscale is working
 </br>   -p   set IP address to ping
 </br>   -e   send an email every time this script runs
-</br>   -i   send an email only if there was a problem with the Internet or tailscale
+</br>   -i   send an email only if there was a problem with the Internet or tailscal
+</br>   -s   skip COUNT errors
 
 
 

@@ -98,7 +98,7 @@ FUNCTION_open_tailscale_application()
 FUNCTION_send_tailscale_reset_command()
 {
 	echo "         Tailscale up --accept-routes	--reset --auth-key=###" 														
-	/Applications/Tailscale.app/Contents/MacOS/Tailscale up --accept-routes	--reset --authkey "$AUTH_KEY" 2>&1	
+	/Applications/Tailscale.app/Contents/MacOS/Tailscale up --accept-routes	--reset --auth-key "$AUTH_KEY" 2>&1	
 	sleep 20
 }
 
